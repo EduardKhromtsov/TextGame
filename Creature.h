@@ -4,7 +4,7 @@
 
 class Creature 
 {
-private:
+protected:
 	std::string sName; 
 	char cSymbol; 
 	int iHealth; 
