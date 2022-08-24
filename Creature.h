@@ -17,5 +17,8 @@ public:
 	int GetHealth();
 	int GetDamage();
 	int GetGold();
+	void ReduceHealth(const int iReducedHealth);
+	bool IsDead();
+	void AddGold(const int iAddingGold);
 };
 

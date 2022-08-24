@@ -35,3 +35,18 @@ int Creature::GetGold()
 {
 	return iGold;
 }
+
+void Creature::ReduceHealth(const int iReducedHealth)
+{
+	iHealth -= iReducedHealth;
+}
+
+bool Creature::IsDead()
+{
+	return iHealth == 0;
+}
+
+void Creature::AddGold(const int iAddingGold)
+{
+	iGold += iAddingGold;
+}
