@@ -3,19 +3,14 @@
 
 #include "Creature.h";
 #include "Player.h";
+#include "Monster.h";
 
 
 int main()
 {
-    std::string sPlayerName;
-
-    std::cout << "Enter your name: ";
-    std::cin >> sPlayerName;
-
-    Player p(sPlayerName);
-
-    std::cout << "Welcome, " << p.GetName() << "\n";
-    std::cout << "You have " << p.GetHealth() << " health and " << p.GetGold() << " gold\n";
+  
+    Monster m{Monster::Type::Orc};
+    std::cout << "A " << m.GetName() << " (" << m.GetSymbol() << ") was created.\n";
     
 }
 

@@ -11,5 +11,9 @@ public:
 		Slime,
 		max_types
 	};
+	
+	Monster(Type type);
+private:
+	static const Creature& GetDefaultCreature(Type type);
 };
 
