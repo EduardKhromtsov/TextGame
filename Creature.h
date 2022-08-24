@@ -11,6 +11,7 @@ private:
 	int iDamage; 
 	int iGold; 
 public:
+	Creature(const std::string sName, const char cSymbol, const int iHealth, const int iDamage, const int iGold);
 	std::string GetName();
 	char GetSymbol();
 	int GetHealth();
