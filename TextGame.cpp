@@ -2,15 +2,21 @@
 #include <iostream>
 
 #include "Creature.h";
+#include "Player.h";
 
 
 int main()
 {
-    Creature o("orc", 'o', 4, 2, 10);
+    std::string sPlayerName;
 
-    o.AddGold(5);
-    o.ReduceHealth(1);
-    std::cout << "The " << o.GetName() << " has " << o.GetHealth() << " health and " << o.GetGold() << " gold.\n";
+    std::cout << "Enter your name: ";
+    std::cin >> sPlayerName;
+
+    Player p(sPlayerName);
+
+    std::cout << "Welcome, " << p.GetName() << "\n";
+    std::cout << "You have " << p.GetHealth() << " health and " << p.GetGold() << " gold\n";
+    
 }
 
 
