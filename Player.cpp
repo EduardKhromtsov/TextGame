@@ -15,3 +15,8 @@ unsigned short int Player::GetLevel()
 {
 	return iLevel;
 }
+
+bool Player::HasWon()
+{
+	return iLevel >= 20;
+}

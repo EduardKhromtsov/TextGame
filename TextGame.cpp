@@ -1,5 +1,6 @@
 ﻿
 #include <iostream>
+#include <ctime>
 
 #include "Creature.h";
 #include "Player.h";
@@ -8,9 +9,15 @@
 
 int main()
 {
+    srand(time(NULL));
+
+    rand();
   
-    Monster m{Monster::Type::Orc};
-    std::cout << "A " << m.GetName() << " (" << m.GetSymbol() << ") was created.\n";
+    for (int i = 0; i < 10; ++i)
+    {
+        Monster m{ Monster::GetRandomMonster() };
+        std::cout << "A " << m.GetName() << " (" << m.GetSymbol() << ") was created.\n";
+    }
     
 }
 

@@ -9,5 +9,6 @@ public:
 	Player(std::string sName);
 	void LevelUp();
 	unsigned short int GetLevel();
+	bool HasWon();
 };
 

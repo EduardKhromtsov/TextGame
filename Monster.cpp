@@ -1,6 +1,5 @@
 #include "Monster.h"
 
-
 const Creature& Monster::GetDefaultCreature(Type type)
 {
 	static std::array<Creature, static_cast<std::size_t>(Type::max_types)> MonsterData
@@ -15,7 +14,15 @@ const Creature& Monster::GetDefaultCreature(Type type)
 	return MonsterData.at(static_cast<std::size_t>(type));
 }
 
+Monster Monster::GetRandomMonster()
+{
+	unsigned short int iNumber = rand() % static_cast<int>(Type::max_types);
+
+	return static_cast<Type>(iNumber);
+}
+
 Monster::Monster(Type type) : Creature(GetDefaultCreature(type))
 {
 
 }
+
