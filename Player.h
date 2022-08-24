@@ -10,5 +10,8 @@ public:
 	void LevelUp();
 	unsigned short int GetLevel();
 	bool HasWon();
+	void Health(const int iHealth);
+	void Power();
+	void Poison();
 };
 

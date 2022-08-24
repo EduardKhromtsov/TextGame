@@ -43,7 +43,7 @@ void Creature::ReduceHealth(const int iReducedHealth)
 
 bool Creature::IsDead()
 {
-	return iHealth == 0;
+	return iHealth <= 0;
 }
 
 void Creature::AddGold(const int iAddingGold)

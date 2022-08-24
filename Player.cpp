@@ -20,3 +20,18 @@ bool Player::HasWon()
 {
 	return iLevel >= 20;
 }
+
+void Player::Health(const int iHealth)
+{
+	this->iHealth += iHealth;
+}
+
+void Player::Power()
+{
+	++iDamage;
+}
+
+void Player::Poison()
+{
+	--iHealth;
+}
