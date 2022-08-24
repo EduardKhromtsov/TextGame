@@ -2,14 +2,14 @@
 
 #include <string>
 
-class Creature // Создаем класс существа.
+class Creature 
 {
 private:
-	std::string sName; // Имя.
-	char cSymbol; // Символ.
-	int iHealth; // Количество здоровья.
-	int iDamage; // Количество урона.
-	int iGold; // Количество золота.
+	std::string sName; 
+	char cSymbol; 
+	int iHealth; 
+	int iDamage; 
+	int iGold; 
 public:
 	std::string GetName();
 	char GetSymbol();
